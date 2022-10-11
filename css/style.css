@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Futura EBlack Condensed";
+    src: url("../font/Futura\ Extra\ Black\ Condensed\ Regular.otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.container{
+    font-family: 'Roboto', sans-serif;
+    width: 576px;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+
+
+/*header*/
+header{
+    grid-area: header;
+    display: grid;
+    width: 576px;
+    grid-template-columns: 13% 57% 10% 10% 10%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "menu logo user favorite cart"
+    "search search search search search";
+    background-color: black;
+}
+.icon{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    width: 40px;
+    height: 40px;
+    justify-self: center;
+    align-self: center;
+}
+.nike-logo-header{
+    justify-self: flex-end;
+    align-self: center;
+    padding: 10px 50px 10px 50px;
+}
+.user{
+    width: 35px;
+    height: 35px;
+    justify-self: center;
+    align-self: center;
+    margin: 0px;
+}
+.favorite{
+    width: 35px;
+    height: 35px;
+    justify-self: center;
+    align-self: center;
+}
+.cart{
+    width: 35px;
+    height: 35px;
+    justify-self: center;
+    align-self: center;
+}
+.search{
+    padding: 10px 26px 10px 30px;
+    width: 576px;
+    grid-area: search;
+}
+.search-bar{
+    width: 520px;
+    height: 50px;
+    justify-self: center;
+    border: 0;
+    font-size: 20px;
+    font-family: "Futura EBlack Condensed";
+    padding-left: 10px;
+    color: black;
+}
+.search-icon{
+    width: 30px;
+    height: 30px;
+    border: none;
+    position: absolute;
+    background-color: transparent;
+    right: 43px;
+    top: 90px;
+}
+.search input::placeholder{
+    font-size: 20px;
+    font-family: "Futura EBlack Condensed";
+    color: black;
+}
+
+
+/*main*/
+
+.cart-card{
+    width: 555px;
+    margin: 0px 10px 0px 10px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "image text";
+    background-color: black;
+    color: white;
+}
+.airforceuno-cart{
+    width: 200px;
+    height: 190px;
+    margin: 10px;
+    grid-area: image;
+}
+.cart-text{
+    grid-area: text;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    line-height: 30px;
+}
+.cart-text h5{
+    font-size: 14px;
+    font-weight: 700;
+}
+.cart-remove{
+    position: absolute;
+    justify-self: flex-end;
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+.subtotal{
+    position: absolute;
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin: 10px;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+.amount-rectangle{
+    width: 63px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    border: 1px solid white;
+    text-align: center;
+    line-height: normal;
+}
+.amount-rectangle p{
+    font-size: 17px;
+    text-align: center;
+    border-left: 1px solid white;
+    border-right:1px solid white;
+}
+.amount{
+    width: 10px;
+    height: 10px;
+    justify-self: center;
+    align-self: center;
+}
+.purchase-summary{
+    margin: 10px 10px 10px 10px;
+}
+.cart-purchase-summary{
+    margin: 10px;
+    background-color: black;
+    color: white;
+    width: 555px;
+    height: 267px;
+    font-size: 25px;
+    line-height: 45px;
+}
+.cart-purchase-summary-title{
+    text-align: center;
+    font-size: 35px;
+}
+.envio-gratis{
+    font-size: 14px;
+}
+.order-summary{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+.free-shipping{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: normal;
+}
+.delivery{
+    width: 22px;
+    height: 22px;
+    margin-left: 5px;
+}
+.apply{
+    width: 55px;
+    height: 55px;
+    background: transparent;
+    border: 1px solid white;
+    padding: 10px;
+}
+.discount{
+    display: flex;
+    gap: 5px;
+}
+.discount-input{
+    background: transparent;
+    border: 1px solid white;
+    width: 400px;
+    height: 55px;
+    text-align: justify;
+    color: white;
+    font-family: "Futura EBlack Condensed";
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.discount-input::placeholder{
+    color: white;
+    font-family: "Futura EBlack Condensed";
+    font-size: 30px;
+}
+.buy form label{
+    display: flex;
+    flex-direction: row;
+    width: 555px;
+    margin: 10px;
+    background-color: black;
+    gap: 10px;
+    justify-content: center;
+}
+.comprar{
+    background: transparent;
+    color: white;
+    border: none;
+    font-family: "Futura EBlack Condensed";
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.check-nike-buy{
+    width: 50px;
+    height: 50px;
+}
+.card-title{
+    font-size: 22px;
+    margin: 10px;
+    font-weight: 600;
+}
+.cards{
+    width: 556px;
+    margin: 10px;
+    display: flex;
+    gap: 5px;
+}
+.card-background{
+    background-color: black;
+    width: 135px;
+    height: 184px;
+    color: white;
+    text-align: center;
+}
+.card-image{
+    width: 119px;
+    height: 107px;
+    margin: 8px;
+}
+.price-card{
+    background-color: black;
+    color: white;
+    position: absolute;
+    text-align: center;
+    margin: 95px 0px 0 11px;
+    font-size: 14px;
+}
+.favorite-heart{
+    position: absolute;
+    width: 20px;
+    height: 20px;  
+    margin: 8px 0 0px 106px
+}
+.card-name{
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer{
+    grid-area: footer;
+    background-color: black;
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+}
+.just-do-it{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+.just-do-it a{
+    text-decoration: none;
+    color: white;
+    font-family: "Futura EBlack Condensed";
+    font-size: 60px;
+}
+.footerul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.footerul li a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+}
+.footersocial{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+}
+.circlesocial{
+    width: 30px;
+    height: 40px;
+}
+.footersocial a img{
+    width: 35px;
+    height: 35px;
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.230);
+    font-size: 10px;
+    justify-self: center;
+    font-weight: lighter;
+}
+.cart-title-pag{
+    margin: 20px;
+    font-family: "Futura EBlack Condensed";
+    font-size: 20px;
+}
+.cart-title-pag p{
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 19px;
+}
