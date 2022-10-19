@@ -385,6 +385,14 @@ footer{
         display: initial;
     }
 }
+/*730px*/
+@media (min-width: 730px){
+    .nike-logo-header{
+        justify-self: center;
+        margin: 10px 50px 10px 280px;
+        padding: 0;
+    }
+}
 /*850px*/
 @media (min-width: 850px){
     .air-jordan-12-retro-playoffs{
@@ -409,9 +417,6 @@ footer{
     .search{
         margin: 10px 10px 11px 30px;
     }
-    /*.search-bar{
-        width: 489px;
-    }*/
     .nike-logo-header{
         padding: 0;
     }
@@ -474,24 +479,19 @@ footer{
     .air-jordan-3-retro-cardinalred {
         display: initial;
 }
-
-
-
-
-
-
-
-
-
-
-
+}
 /*air-force-uno.html main mobile*/
 .route-airforce-uno{
     margin: 10px 20px 10px 20px;
     font-weight: 600;
 }
 .air-forceuno-image{
-    margin: 10px 20px 0 20px;
+    margin: 0 20px;
+}
+.flex-main-airforce-uno{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .big-airforce-uno{
     width: 536px;
@@ -512,6 +512,7 @@ footer{
     background-color: black;
     border-radius: 50%;
     display: flex;
+    cursor: pointer;
 }
 .gray-circle{
     width: 6px;
@@ -519,6 +520,7 @@ footer{
     background-color: grey;
     border-radius: 50%;
     display: flex;
+    cursor: pointer;
 }
 .text-airforce-uno{
     margin: 5px 20px 5px 20px;
@@ -616,6 +618,16 @@ footer{
 }
 .promos-flex:nth-child(2){
     border-bottom: 2px solid;
+}
+@media (min-width: 730px){
+    .flex-main-airforce-uno{
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 992px){
+    .nike-logo-header{
+        margin: 0;
+    }
 }
 /*index.html*/
 .icon-desktop{
